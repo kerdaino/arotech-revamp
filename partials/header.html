@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#2aa7ff',
+            brandTeal: '#2ed0f3',
+            brandGray: '#7a7a7a',
+            brandOrange: '#ff7b2e'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+<header class="sticky top-0 z-50 bg-white shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-20">
+      <a class="flex items-center gap-3" href="/" data-nav>
+        <img class="h-12 w-auto" src="/assets/images/logo.png" alt="Arotech Logo">
+        <!-- <span class="text-2xl font-bold gradient-text">Arotech</span> -->
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/" data-nav>Home</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/about" data-nav>About</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/services" data-nav>Services</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/projects" data-nav>Projects</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/maintenance" data-nav>Maintenance</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/digital" data-nav>Digital</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a class="hidden lg:block bg-gradient-to-r from-brandBlue via-brandGray to-brandOrange text-white px-6 py-2 rounded-full font-medium hover-lift" href="/contact" data-nav>Contact</a>
+        <button class="lg:hidden bg-transparent px-4 py-2 rounded-lg" type="button" data-mobile-toggle>
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobileNav" class="lg:hidden hidden bg-white/80 backdrop-blur-sm absolute top-full left-0 w-full shadow-lg border-t border-white/20 z-50">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/" data-nav>Home</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/about" data-nav>About</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/services" data-nav>Services</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/projects" data-nav>Projects</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/maintenance" data-nav>Maintenance</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/digital" data-nav>Digital</a>
+        <a class="text-gray-700 hover:text-brandBlue font-medium transition-colors" href="/contact" data-nav>Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+</body>
+</html>
